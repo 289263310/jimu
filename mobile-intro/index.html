@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>document.documentElement.style.fontSize = document.documentElement.getBoundingClientRect().width / 375 * 100 + 'px';</script>
+        <meta charset="utf-8"/>
+        <link href="public/css/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <img src="{{banner}}" class="m-banner" />
+        <div class="m-content">
+            <div class="m-content-icons">
+                {% for key, val in links %}
+                    <div class="m-content-item">
+                        <img class="img" src="{{val.img}}">
+                        <p class="title">{{val.name}}</p>
+                    </div>
+                {% endfor %}
+            </div>
+            <img class="ui-logo" src="{{logo}}">
+            <h2 class="ui-title">{{headline}}</h2>
+            {% for key, val in download %}
+                <div class="m-content-btns">
+                    <a class="btn" href="{{val.link}}">{{val.name}}</a>
+                </div>
+            {% endfor %}
+        </div>
+    <script>
+        //
+    window.addEventListener('resize', function(){
+        document.documentElement.style.fontSize = document.documentElement.getBoundingClientRect().width / 375 * 100 + 'px';
+    })
+    </script>
+    </body>
+</html>

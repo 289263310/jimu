@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  outline: 0;
+  font-size: 100px;
+}
+body {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.m-banner {
+  width: 100%;
+}
+.m-content {
+  text-align: center;
+  padding-bottom: 0.61125rem;
+}
+.m-content-icons {
+  width: 3.375rem;
+  margin: -0.56rem auto 0.35rem;
+  letter-spacing: -3px;
+  padding: 0.18rem 0;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+  border-radius: 6px;
+  box-sizing: border-box;
+  position: relative;
+  background: #fff;
+  z-index: 1;
+}
+.m-content-icons:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.m-content-item {
+  display: block;
+  letter-spacing: 3px;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.m-content-item .img {
+  width: 0.25rem;
+  margin-bottom: 0.04rem;
+}
+.m-content-item .title {
+  font-size: 0.1rem;
+  line-height: 14px;
+  color: #5d5d5d;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.m-content .ui-logo {
+  width: 0.8rem;
+}
+.m-content .ui-title {
+  font-size: 20px;
+  margin: 0.3rem auto 0.4rem;
+}
+.m-content-btns {
+  margin: 0.15rem auto;
+  width: 60%;
+}
+.m-content-btns .btn {
+  display: block;
+  background: #5c90f3;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.105rem 0.15rem;
+  margin: 0 0.075rem;
+  margin-bottom: 0.2rem;
+}

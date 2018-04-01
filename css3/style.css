@@ -1,0 +1,126 @@
+.icon {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+}
+.face {
+  margin: auto;
+  width: 110px;
+  height: 86px;
+  border-radius: 50%;
+  background-color: #a3d768;
+}
+.face-mouth {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 19px;
+  border-bottom: 3px solid #3f6a34;
+  animation: mymouth 1.5s linear 0s infinite alternate;
+}
+.eyes {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -18px;
+  height: 35px;
+  width: 86px;
+}
+.eyes-eye {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #a3d768;
+  height: 35px;
+  width: 35px;
+}
+.eyes-eye.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.eyes-eye.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.eyes .white {
+  background: #fff;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+.eyes .white.left {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.eyes .white.right {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+.eyes .pupil {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  background-color: #3f6a34;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+}
+.eyes .shadow {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-color: #fff;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+@-moz-keyframes mymouth {
+  0% {
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
+@-webkit-keyframes mymouth {
+  0% {
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
+@-o-keyframes mymouth {
+  0% {
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
+@keyframes mymouth {
+  0% {
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 50%;
+  }
+}
