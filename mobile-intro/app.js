@@ -2,18 +2,15 @@ var express = require('express');
 var swig = require('swig');
 var fs = require('fs');
 var path = require('path');
-
 var app = express();
-
 var stylus = require('stylus');
 var str = fs.readFileSync('./style.styl', 'utf8');
+
 stylus.render(str, function(err, css){
     if (err) throw err;
     fs.writeFileSync('./public/css/style.css', css, 'utf8');
 });
 app.use('/public', express.static(__dirname + '/public'));
-
-//设置swig页面不缓存
 swig.setDefaults({
   cache: false
 })
@@ -21,11 +18,9 @@ app.set('view cache', false);
 app.set('views','./');
 app.set('view engine','html');
 app.engine('html', swig.renderFile);
-
 app.listen(4000, function() {
     console.log('started!');
 });
-//index page
 app.get('/',function(req, res){
     res.render('index',{
         title: '积木盒子jimu.com',
